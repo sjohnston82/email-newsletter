@@ -131,4 +131,21 @@ body {
     font-family: "RobotoBold";
     font-size: 1rem;
   }
+
+  .label-error-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .error-text-disabled {
+    display: none
+  }
+
+  .error-text {
+    color: #F3A49B;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
 }
