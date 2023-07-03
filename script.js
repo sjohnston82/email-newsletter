@@ -17,7 +17,7 @@ emailForm.addEventListener("submit", (e) => {
   } else if (errorText.classList.contains("error-text") || isValid) {
     errorText.classList.remove("error-text");
     errorText.classList.add("error-text-disabled");
-    // emailInput.classList.remove("error-input");
+  
 
     localStorage.setItem("email", userEmail);
     window.location.href = "success.html";
