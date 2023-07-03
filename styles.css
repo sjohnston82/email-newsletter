@@ -1,0 +1,99 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("/frontend-mentor/email-newsletter/assets/fonts/Roboto-Regular.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("/frontend-mentor/email-newsletter/assets/fonts/Roboto-Bold.ttf")
+    format("truetype");
+}
+
+body {
+  background-color: #37384e;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: white;
+  }
+
+  .container {
+    width: 100vw;
+  }
+  .top-img {
+    width: 100vw;
+  }
+  .main {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+  .heading {
+    font-family: "RobotoBold";
+    color: #212542;
+    font-size: 2.5rem;
+  }
+  .text {
+    font-family: "Roboto";
+    color: #212542;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+  }
+  ul {
+    list-style-image: url("../email-newsletter/assets/images/icon-list.svg");
+    padding-left: 1.6rem;
+  }
+
+  li {
+    margin-top: 10px;
+  }
+  li span {
+    position: relative;
+    top: -5px;
+    left: 12px;
+  }
+
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 30px;
+  }
+
+  .form-label {
+    font-family: "Roboto";
+    color: #212542;
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  input {
+    padding: 24px;
+    border-radius: 10px;
+    border-color: lightgray;
+    outline: none;
+    border: 1px solid #a1a1aa;
+    font-family: "Roboto";
+    font-size: 1.1rem;
+  }
+
+  input::placeholder {
+    font-size: 1.1rem;
+  }
+
+  .submit-btn {
+    background-color: #212542;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 24px;
+    font-family: "Roboto";
+    font-size: 0.95rem;
+    margin-top: 20px;
+    margin-bottom: 36px;
+  }
+}
