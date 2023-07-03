@@ -274,14 +274,17 @@
         </ul>
         <form action="" class="email-form">
           <div class="label-error-container">
-          <label for="" class="form-label">Email address</label>
-          <p class="error-text">Valid email required</p>
+            <label for="" class="form-label">Email address</label>
+            <p class="error-text-disabled" id="errorText">
+              Valid email required
+            </p>
           </div>
           <input
-            type="email"
+            type="text"
             name="email"
-            id="email"
+            id="emailAddress"
             placeholder="email@company.com"
+            class=""
           />
           <button class="submit-btn" type="submit">
             Subscribe to monthly newsletter

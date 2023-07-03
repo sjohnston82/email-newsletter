@@ -97,7 +97,6 @@ body {
     margin-bottom: 36px;
   }
 
-
   .success-main {
     padding: 1.5rem;
     padding-top: 10rem;
@@ -116,7 +115,7 @@ body {
     color: #212542;
   }
 
-  .user-email {
+  .user-email-success {
     font-weight: bold;
   }
 
@@ -139,13 +138,19 @@ body {
   }
 
   .error-text-disabled {
-    display: none
+    display: none;
   }
 
   .error-text {
-    color: #F3A49B;
+    color: #f3a49b;
     font-family: "Roboto";
     font-weight: bold;
     font-size: 0.8rem;
+  }
+
+  .error-input {
+    background-color: #ffe8e6;
+    color: #f3a49b;
+    border: 1px solid #f3a49b;
   }
 }
