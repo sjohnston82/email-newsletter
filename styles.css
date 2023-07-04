@@ -247,7 +247,7 @@ body {
   .top-img {
     content: url("/assets/images/illustration-sign-up-mobile.svg");
 
-    width: auto;
+    width: 100%;
     margin-bottom: 40px;
   }
   .main {
