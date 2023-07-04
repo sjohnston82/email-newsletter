@@ -16,53 +16,225 @@ body {
   margin: 0;
 }
 
- .error-text-disabled {
-    display: none;
-  }
+.error-text-disabled {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
   body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row-reverse;
+    height: 100vh;
   }
 
   .container {
     background-color: white;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
-    width: 60vw;
-    height: 60vh;
+    justify-content: center;
+    width: 40vw;
+    height: 55vh;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 35px;
+    padding: 20px;
+    margin: 0;
+    gap: 10px;
   }
 
   .top-img {
-    height: 100%;
+    content: url("../email-newsletter/assets/images/illustration-sign-up-desktop.svg");
+    width: auto;
     display: flex;
-    width: 50%;
-    background-color: lightyellow;
-  }
-
-  .top-img svg {
-    border-radius: 10px;
-    padding: 10px;
+    flex: 1;
+    background-repeat: no-repeat;
+    height: 100%;
   }
 
   .main {
     display: flex;
-    flex: 1;
+    height: 100%;
+    /* align-items: center; */
     flex-direction: column;
     font-family: "Roboto";
     color: #212542;
-    padding: 20px;
-    background-color: lightblue;
+    padding-left: 35px;
+    padding-right: 50px;
+    margin: 0;
+    /* margin-top: -8rem; */
+    width: 65%;
+    justify-content: center;
+
+    /* background-color: lightblue; */
   }
 
   .heading {
-    text-align: center;
+    font-size: 3rem;
+    margin-top: 1.5rem;
+    padding: 0;
+    font-family: "RobotoBold";
+    margin-bottom: 1.1rem;
+  }
+  .text {
+    font-family: "Roboto";
+    color: #212542;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    margin: 0;
+  }
+
+  ul {
+    list-style-image: url("../email-newsletter/assets/images/icon-list.svg");
+    padding-left: 1.6rem;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    margin-top: 10px;
+  }
+  li span {
+    position: relative;
+    top: -5px;
+    left: 12px;
+  }
+
+  .email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+    /* margin-top: 30px; */
+  }
+
+  .form-label {
+    font-family: "Roboto";
+    color: #212542;
+    font-weight: bold;
+    font-size: 0.7rem;
+  }
+
+  input {
+    padding: 15px;
+    border-radius: 7px;
+    border-color: lightgray;
+    outline: none;
+    border: 1px solid #a1a1aa;
+    font-family: "Roboto";
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  input::placeholder {
+    font-size: 1rem;
+  }
+
+  input:focus {
+    border: 1px solid black;
+  }
+
+  .submit-btn {
+    background-color: #212542;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    padding: 15px;
+    font-family: "Roboto";
+    font-size: 0.95rem;
+    margin-top: 20px;
+    margin-bottom: 36px;
+    cursor: pointer;
+  }
+  .submit-btn:hover {
+    background-image: linear-gradient(to right, #ff537b 0%, #ff693c 100%);
+  }
+
+  .label-error-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .error-text-disabled {
+    display: none;
+  }
+
+  .error-text {
+    color: hsl(4, 100%, 67%);
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+
+  .error-input {
+    background-color: #ffe8e6;
+    color: hsl(4, 100%, 67%);
+    border: 1px solid hsl(4, 100%, 67%);
+  }
+
+  .success-main {
+    font-family: "Roboto";
+    color: #212542;
+    height: 40%;
+    width: 20%;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .success-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+
+  .success-img-wrapper  {
+    height: 60%;
+    width: 60%;
+  }
+
+  .success-img-wrapper img {
+    width: 28%
+  }
+
+  .success-header {
+    font-size: 3rem;
+    font-family: "RobotoBold";
+    margin: 0;
+    padding: 0;
+    margin-top: -8rem;
+    line-height: 3rem
+  }
+
+  .success-text {
+    font-weight: normal;
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    color: #212542;
+    width: 90%;
+  }
+
+  .user-email-success {
+    font-weight: bold;
+  }
+
+  .dismiss-btn {
+    width: 100%;
+    background-color: #212542;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 14px;
+    margin-top: 20px;
+    font-family: "RobotoBold";
+    font-size: 0.9rem;
+  }
+  .dismiss-btn:hover {
+    background-image: linear-gradient(to right, #ff537b 0%, #ff693c 100%);
   }
 }
 
@@ -75,7 +247,10 @@ body {
     width: 100vw;
   }
   .top-img {
-    width: 100vw;
+    content: url("../email-newsletter/assets/images/illustration-sign-up-mobile.svg");
+
+    width: auto;
+    margin-bottom: 40px;
   }
   .main {
     padding-left: 1.3rem;
