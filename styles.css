@@ -230,6 +230,7 @@ body {
     margin-top: 20px;
     font-family: "RobotoBold";
     font-size: 0.9rem;
+    cursor: pointer;
   }
   .dismiss-btn:hover {
     background-image: linear-gradient(to right, #ff537b 0%, #ff693c 100%);
@@ -362,6 +363,7 @@ body {
     margin-top: 16rem;
     font-family: "RobotoBold";
     font-size: 1rem;
+    cursor: pointer;
   }
   .dismiss-btn:hover {
     background-image: linear-gradient(to right, #ff537b 0%, #ff693c 100%);
