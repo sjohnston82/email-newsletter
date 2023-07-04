@@ -236,7 +236,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 767px) {
   body {
     background-color: white;
   }
