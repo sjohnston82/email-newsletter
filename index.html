@@ -7,10 +7,9 @@
     <title>Email Newsletter</title>
   </head>
   <body>
-    <div class="container">
-      <div class="top-img">
-      </div>
-      <div class="main">
+    <main role="main" class="container">
+      <div role="img" class="top-img"></div>
+      <div role="contentinfo" class="main">
         <h1 class="heading">Stay updated!</h1>
         <p class="text">
           Join 60,000+ product managers receiving monthly updates on:
@@ -24,9 +23,9 @@
           </li>
           <li class="text"><span>And much more!</span></li>
         </ul>
-        <form action="" class="email-form">
+        <form action="success.html" class="email-form">
           <div class="label-error-container">
-            <label for="" class="form-label">Email address</label>
+            <label for="email" class="form-label">Email address</label>
             <p class="error-text-disabled" id="errorText">
               Valid email required
             </p>
@@ -36,14 +35,13 @@
             name="email"
             id="emailAddress"
             placeholder="email@company.com"
-            class=""
           />
           <button class="submit-btn" type="submit">
             Subscribe to monthly newsletter
           </button>
         </form>
       </div>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

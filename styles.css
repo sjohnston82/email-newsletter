@@ -31,8 +31,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    width: 40vw;
-    height: 55vh;
+
     align-items: center;
     border-radius: 35px;
     padding: 20px;
@@ -246,7 +245,7 @@ body {
     width: 100vw;
   }
   .top-img {
-    content: url("../email-newsletter/assets/images/illustration-sign-up-mobile.svg");
+    content: url("/assets/images/illustration-sign-up-mobile.svg");
 
     width: auto;
     margin-bottom: 40px;
@@ -268,7 +267,7 @@ body {
     font-weight: bold;
   }
   ul {
-    list-style-image: url("../email-newsletter/assets/images/icon-list.svg");
+    list-style-image: url("/assets/images/icon-list.svg");
     padding-left: 1.6rem;
   }
 
